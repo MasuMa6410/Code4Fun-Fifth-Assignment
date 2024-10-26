@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Web Development</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        background-color: white;
+        vertical-align: top;
+        height: 60px;
+      }
+
+      .left-part {
+        float: left;
+        width: 40%;
+        padding: 20px;
+      }
+
+      .left-part p {
+        color: darkturquoise;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .left-part ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .left-part li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .left-part li a {
+        color: darkgray;
+        text-decoration: none;
+        padding: 15px 10px;
+      }
+
+      .bgc {
+        background-color: rgb(241, 240, 240);
+      }
+
+      .right-part {
+        float: right;
+        width: 40%;
+        padding: 20px;
+
+        text-align: right;
+      }
+
+      .right-part ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .right-part li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .right-part li a {
+        text-decoration: none;
+        padding: 15px 10px;
+      }
+
+      .gray {
+        color: darkgray;
+      }
+
+      .log-in {
+        color: darkturquoise;
+      }
+
+      nav {
+        width: 100%;
+        height: 30px;
+        background-color: darkturquoise;
+      }
+
+      .nav-part {
+        float: left;
+        width: 100%;
+      }
+
+      .nav-part ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-part li {
+        color: white;
+        display: inline-block;
+        margin-top: 5px;
+        margin: 5px 20px;
+      }
+
+      .nav-part li a {
+        text-align: left;
+        color: white;
+        text-decoration: none;
+      }
+
+      .border-bottom {
+        border-bottom: 2px solid rgb(2, 145, 148);
+      }
+
+      .first-part {
+        background-color: rgb(2, 145, 148);
+        text-align: center;
+        color: white;
+        padding: 40px;
+      }
+
+      .first-part h1 {
+        font-size: 25px;
+        font-weight: lighter;
+      }
+
+      .first-part h1,
+      p {
+        margin: 0;
+      }
+
+      .second-part {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .second-part p {
+        margin: 0 350px;
+      }
+
+      .third-part-1 {
+        background-color: skyblue;
+        width: 100%;
+        height: 400px;
+      }
+
+      .third-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .third-part-item {
+        margin: 50px auto;
+      }
+
+      .third-part-item img {
+        width: 350px;
+        height: 300px;
+        border: 1px solid lightblue;
+      }
+
+      .third-part-p {
+        font-size: 30px;
+      }
+
+      .fourth-part-1 {
+        background-color: white;
+        width: 100%;
+        height: 400px;
+      }
+
+      .fourth-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .fourth-part-item {
+        margin: 50px auto;
+      }
+
+      .fourth-part-item img {
+        width: 350px;
+        height: 300px;
+        border: 1px solid lightblue;
+      }
+
+      .fourth-part-p {
+        font-size: 30px;
+      }
+
+      .fifth-part-1 {
+        background-color: skyblue;
+        width: 100%;
+        height: 400px;
+      }
+
+      .fifth-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .fifth-part-item {
+        margin: 50px auto;
+      }
+
+      .fifth-part-item img {
+        width: 350px;
+        height: 300px;
+        border: 1px solid lightblue;
+      }
+
+      .fifth-part-p {
+        font-size: 30px;
+      }
+
+      .sixth-part-1 {
+        background-color: white;
+        width: 100%;
+        height: 400px;
+      }
+
+      .sixth-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .sixth-part-item {
+        margin: 50px auto;
+      }
+
+      .sixth-part-item img {
+        width: 350px;
+        height: 300px;
+        border: 1px solid lightblue;
+      }
+
+      .sixth-part-p {
+        font-size: 30px;
+      }
+
+      .seventh-part-1 {
+        background-color: skyblue;
+        width: 100%;
+        height: 400px;
+      }
+
+      .seventh-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .seventh-part-item {
+        margin: 50px auto;
+      }
+
+      .seventh-part-item img {
+        width: 350px;
+        height: 300px;
+        border: 1px solid lightblue;
+      }
+
+      .seventh-part-p {
+        font-size: 30px;
+      }
+
+      .eighth-part-1 {
+        background-color: white;
+        width: 100%;
+        height: 400px;
+      }
+
+      .eighth-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .eighth-part-item {
+        margin: 50px auto;
+      }
+
+      .eighth-part-item img {
+        width: 350px;
+        height: 300px;
+        border: 1px solid lightblue;
+      }
+
+      .eighth-part-p {
+        font-size: 30px;
+      }
+
+      .ninth-part {
+        width: 100%;
+        background-color: skyblue;
+        padding-bottom: 30px;
+      }
+
+      .ninth-part-p {
+        padding-top: 15px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .ninth-part-item {
+        background-color: white;
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 20px;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left-part">
+        <!-- MOZ  -->
+        <p style="font-size: 25px">Lila</p>
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#" class="bgc">About</a></li>
+        </ul>
+      </div>
+      <div class="right-part">
+        <ul>
+          <!-- Link -->
+          <li><a href="#" class="gray">Home</a></li>
+          <!-- Link -->
+          <li><a href="#" class="gray">Services</a></li>
+          <!-- Link -->
+          <li><a href="#" class="gray">Contact Us</a></li>
+          <!-- Link -->
+          <li><a href="#" class="gray">Sign Up</a></li>
+          <li><a href="#" class="log-in">Log in</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- <nav>
+      <div class="nav-part">
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li class="border-bottom"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <div class="first-part">
+      <!-- The Moz Story -->
+      <h1>Front-end Web Development</h1>
+      <!-- <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+        possimus!
+      </p> -->
+    </div>
+    <div class="second-part">
+      <p>
+        <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. At eius
+        quaerat delectus fugiat tenetur modi, earum sed sit placeat ex ad illo
+        voluptatum? Perferendis iusto quisquam molestias ducimus culpa veniam
+        saepe, odio eligendi sequi voluptatum nobis hic corporis, dolores
+        nostrum fugit! Ea aliquid nobis pariatur non tempora. Expedita cumque
+        itaque quaerat magnam similique sit labore mollitia, dicta velit soluta
+        vero.At eius quaerat delectus fugiat tenetur modi, earum sed sit placeat
+        ex ad illo voluptatum? Perferendis iusto quisquam molestias ducimus
+        culpa veniam saepe, odio eligendi sequi voluptatum nobis hic corporis,
+        dolores nostrum fugit! -->
+        Front-end web development is the practice of building and designing the
+        visual and interactive aspects of a website or web application that
+        users directly interact with. It involves the use of technologies like
+        HTML (HyperText Markup Language) for structure, CSS (Cascading Style
+        Sheets) for styling and layout, and JavaScript for adding dynamic
+        behavior and interactivity. Front-end developers focus on creating a
+        seamless user experience, ensuring that the website looks good and
+        functions well across different devices and browsers. They work closely
+        with design and back-end teams to integrate visual designs and connect
+        the front-end with server-side operations.
+      </p>
+    </div>
+    <section class="third-part-1">
+      <div class="third-part">
+        <div class="third-part-item">
+          <img
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <!-- <img
+            src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+            alt="An Image"
+          /> -->
+        </div>
+        <div class="third-part-item">
+          <p class="third-part-p">
+            Importance of Front-end web development for users
+          </p>
+          <br />
+          <p>
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            praesentium exercitationem quo quae nemo numquam molestias mollitia
+            odit omnis accusantium labore, nihil hic cumque architecto vel,
+            ipsam saepe fugiat quibusdam cupiditate nisi vitae voluptates
+            magnam? Necessitatibus, minus libero architecto quasi voluptatibus
+            corporis excepturi vero, eveniet delectus sed vel ipsum sunt? -->
+            Front-end development is crucial for user experience as it shapes
+            how users interact with a website. It ensures intuitive navigation,
+            appealing design, fast performance, and accessibility, directly
+            influencing user satisfaction and engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="fourth-part-1">
+      <div class="fourth-part">
+        <div class="fourth-part-item">
+          <p class="fourth-part-p">HTML (Hyper Text Markup Language)</p>
+          <br />
+          <p>
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            praesentium exercitationem quo quae nemo numquam molestias mollitia
+            odit omnis accusantium labore, nihil hic cumque architecto vel,
+            ipsam saepe fugiat quibusdam cupiditate nisi vitae voluptates
+            magnam? Necessitatibus, minus libero architecto quasi voluptatibus
+            corporis excepturi vero, eveniet delectus sed vel ipsum sunt? -->
+            HTML (HyperText Markup Language) is the backbone of web pages, using
+            a combination of tags, elements, and attributes to define content
+            and structure.
+          </p>
+          <ul>
+            <li>
+              Tags: Mark the beginning and end of an HTML element, enclosed in
+              angle brackets
+            </li>
+            <li>Elements: Consist of tags and the content between them</li>
+            <li>
+              Attributes: Provide additional information about an element,
+              usually within the opening tag
+            </li>
+          </ul>
+        </div>
+        <div class="fourth-part-item">
+          <!-- <img
+            src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+            alt="An Image"
+          /> -->
+          <img src="undraw_static_website_re_x70h.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="fifth-part-1">
+      <div class="fifth-part">
+        <div class="fifth-part-item">
+          <!-- <img
+            src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+            alt="An Image"
+          /> -->
+          <img src="CSS.svg" alt="" />
+        </div>
+        <div class="fifth-part-item">
+          <p class="fifth-part-p">CSS (Cascading Style Sheet)</p>
+          <br />
+          <p>
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            praesentium exercitationem quo quae nemo numquam molestias mollitia
+            odit omnis accusantium labore, nihil hic cumque architecto vel,
+            ipsam saepe fugiat quibusdam cupiditate nisi vitae voluptates
+            magnam? Necessitatibus, minus libero architecto quasi voluptatibus
+            corporis excepturi vero, eveniet delectus sed vel ipsum sunt? -->
+            CSS (Cascading Style Sheets) is a stylesheet language used to
+            control the presentation of HTML elements on a webpage. It defines
+            the look and layout, including colors, fonts, spacing, and
+            positioning, making the website visually appealing and consistent
+            across different devices.
+          </p>
+          <ul>
+            <li>
+              Selectors: Target specific HTML elements to apply styles (e.g.,
+              h1, .class, #id).
+            </li>
+            <li>
+              Properties: Define what aspect of the element to style (e.g.,
+              color, font-size, margin).
+            </li>
+            <li>
+              Responsiveness: Allows designs to adapt to various screen sizes
+              with media queries.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="sixth-part-1">
+      <div class="sixth-part">
+        <div class="sixth-part-item">
+          <p class="sixth-part-p">JS (Java Script)</p>
+          <br />
+          <p>
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            praesentium exercitationem quo quae nemo numquam molestias mollitia
+            odit omnis accusantium labore, nihil hic cumque architecto vel,
+            ipsam saepe fugiat quibusdam cupiditate nisi vitae voluptates
+            magnam? Necessitatibus, minus libero architecto quasi voluptatibus
+            corporis excepturi vero, eveniet delectus sed vel ipsum sunt? -->
+            JavaScript (JS) is a programming language that enables interactive
+            and dynamic features on websites, such as form validation,
+            animations, and real-time updates. It runs in the browser, allowing
+            developers to create interactive experiences without reloading the
+            page.
+          </p>
+          <ul>
+            <li>
+              DOM Manipulation: Changes HTML and CSS dynamically to update
+              content or styles.
+            </li>
+            <li>
+              Event Handling: Responds to user actions like clicks, key presses,
+              or scrolls.
+            </li>
+          </ul>
+        </div>
+        <div class="sixth-part-item">
+          <!-- <img
+            src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+            alt="An Image"
+          /> -->
+          <img
+            src="https://media.istockphoto.com/id/1156837650/photo/javascript-code-computer-language-programming-internet-text-editor-components-display-screen.webp?s=1024x1024&w=is&k=20&c=t9nCzOBHOuu3W7k02i6uPblV2TGW_payWtEsahZECns="
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="seventh-part-1">
+      <div class="seventh-part">
+        <div class="seventh-part-item">
+          <!-- <img
+            src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+            alt="An Image"
+          /> -->
+          <img src="JS.svg" alt="" />
+        </div>
+        <div class="seventh-part-item">
+          <p class="seventh-part-p">The combination of this three</p>
+          <br />
+          <p>
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            praesentium exercitationem quo quae nemo numquam molestias mollitia
+            odit omnis accusantium labore, nihil hic cumque architecto vel,
+            ipsam saepe fugiat quibusdam cupiditate nisi vitae voluptates
+            magnam? Necessitatibus, minus libero architecto quasi voluptatibus
+            corporis excepturi vero, eveniet delectus sed vel ipsum sunt? -->
+            With HTML, CSS, and JavaScript, you can create fully functional and
+            interactive websites or web applications.
+          </p>
+          <ul>
+            <li>HTML structures the content (e.g., text, images, forms).</li>
+            <li>CSS styles the layout (e.g., colors, fonts, spacing).</li>
+            <li>
+              JavaScript adds interactivity (e.g., animations, dynamic content,
+              user input handling).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="eighth-part-1">
+      <div class="eighth-part">
+        <div class="eighth-part-item">
+          <p class="eighth-part-p">Our founding</p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            praesentium exercitationem quo quae nemo numquam molestias mollitia
+            odit omnis accusantium labore, nihil hic cumque architecto vel,
+            ipsam saepe fugiat quibusdam cupiditate nisi vitae voluptates
+            magnam? Necessitatibus, minus libero architecto quasi voluptatibus
+            corporis excepturi vero, eveniet delectus sed vel ipsum sunt?
+          </p>
+        </div>
+        <div class="eighth-part-item">
+          <img
+            src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+            alt="An Image"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <div class="ninth-part" style="background-color: white">
+      <p class="ninth-part-p">Some sources for learning more...</p>
+      <div
+        class="ninth-part-item"
+        style="background-color: skyblue; text-align: left"
+      >
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          architecto incidunt labore quibusdam, odit deleniti rerum libero
+          reprehenderit id ea, quidem vero ab. Quisquam non eos saepe obcaecati
+          necessitatibus ab in tenetur delectus libero corporis. Neque officiis
+          accusamus corporis? Rem quia sequi in non recusandae nesciunt
+          architecto dicta aliquid magnam eos, tenetur quod ad quis excepturi
+          natus tempore, optio vel?
+        </p> -->
+        <p>
+          1.DataCamp – Offers interactive coding courses, including web
+          development.
+          <br />
+
+          2.freeCodeCamp – Free, self-paced courses with hands-on projects
+          <br />
+
+          3.Codecademy – Beginner-friendly, interactive lessons on HTML, CSS,
+          and JavaScript.
+          <br />
+
+          4. Udemy – Paid courses on various front-end topics, often with
+          practical projects
+          <br />
+
+          5.Coursera – University-level courses on web development from top
+          institutions
+          <br />
+
+          6.MDN Web Docs – Comprehensive free documentation and tutorials on
+          HTML, CSS, and JS.
+        </p>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <p>Interested in our latest chapter?</p>
+    </footer> -->
+  </body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thirteenth Day Homework 2</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        background-color: white;
+        vertical-align: top;
+        height: 60px;
+      }
+
+      .left-part {
+        float: left;
+        width: 40%;
+        padding: 20px;
+      }
+
+      .left-part ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .left-part li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .left-part li a {
+        color: skyblue;
+        text-decoration: none;
+        padding: 15px 10px;
+      }
+
+      .right-part {
+        float: right;
+        width: 40%;
+        padding: 20px;
+
+        text-align: right;
+      }
+
+      .right-part ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+
+      .right-part li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .right-part li a {
+        text-decoration: none;
+        padding: 15px 10px;
+        color: skyblue;
+      }
+
+      .right-part button {
+        color: skyblue;
+        background-color: white;
+        border: 1px solid skyblue;
+        padding: 5px;
+      }
+
+      .all-content-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 95%;
+        margin: 0 auto;
+        gap: 1px;
+        text-align: center;
+        color: white;
+      }
+
+      .all-content-item h1 {
+        font-weight: lighter;
+        margin-bottom: 15px;
+        margin-top: 70px;
+        color: white;
+      }
+
+      .all-content-item p {
+        font-size: 15px;
+        color: white;
+      }
+
+      .all-content-item button {
+        color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: rgb(126, 247, 247);
+        padding: 5px;
+        margin: 10px 5px;
+      }
+
+      .horizental-line {
+        border: 1px solid white;
+        width: 25px;
+        margin: 0 auto;
+      }
+
+      .all-content-item img {
+        width: 900px;
+        height: 300px;
+      }
+
+      .first-content {
+        background-color: rgb(126, 247, 247);
+        width: 310px;
+        height: 300px;
+      }
+
+      .all-content-2 {
+        background-image: url(https://plus.unsplash.com/premium_photo-1671229454717-5cae51913abc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJsdWUlMjBza3klMjB3aXRoJTIwY291bGRzfGVufDB8fDB8fHww);
+        width: 94.5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 30px;
+        padding: 10px;
+        color: white;
+      }
+
+      .all-content-2 h1 {
+        font-weight: lighter;
+        margin-bottom: 15px;
+      }
+
+      .all-contetn-2-p {
+        padding: 0 350px;
+      }
+
+      .all-content-3 {
+        background-color: rgb(126, 247, 247);
+        width: 88.3%;
+        text-align: center;
+        margin: 5px auto;
+        margin-left: 30px;
+        padding: 50px;
+        color: white;
+      }
+
+      .all-content-3 h1 {
+        font-weight: lighter;
+        margin-bottom: 15px;
+      }
+
+      .all-content-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        width: 96.2%;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        margin-left: 30px;
+      }
+
+      .all-content-4-item {
+        padding: 20px 100px;
+        background-color: rgb(126, 247, 247);
+      }
+
+      .all-content-4-item h1 {
+        font-weight: lighter;
+        margin-bottom: 20px;
+      }
+
+      .all-content-4-item p {
+        padding: 10px 0;
+      }
+
+      .all-content-5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(126, 247, 247);
+        width: 94.6%;
+        margin: 0 auto;
+        margin-left: 30px;
+        padding: 10px;
+
+        text-align: center;
+        color: white;
+      }
+
+      .all-content-5-item {
+        width: 15%;
+        margin: 0 auto;
+        padding-top: 30px;
+      }
+
+      .all-content-5-item button {
+        color: white;
+        background-color: rgb(126, 247, 247);
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 5px 12px;
+        margin-bottom: 20px;
+      }
+
+      .upper-content-5 {
+        background-color: rgb(126, 247, 247);
+        width: 96.2%;
+        margin-left: 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .upper-content-5 h1 {
+        margin-top: 5px;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left-part">
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="right-part">
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <button>Register Now</button>
+      </div>
+    </header>
+    <div class="all-content-1">
+      <div class="all-content-item first-content">
+        <h1>MARY D.DAVIS</h1>
+        <hr class="horizental-line" />
+        <p>Lorem ipsum dolor sit</p>
+        <button>Register Now</button>
+        <button>Register Now</button>
+      </div>
+      <div class="all-content-item">
+        <img
+          src="https://media.istockphoto.com/id/496415338/photo/comfy-with-some-coffee.webp?b=1&s=612x612&w=0&k=20&c=6yvyP71R8rlQFyIBybac7r_ttMrIj0ZuA3yqPUyW78g="
+          alt="An image"
+        />
+      </div>
+    </div>
+    <div class="all-content-2">
+      <h1>About Me</h1>
+      <hr class="horizental-line" />
+      <p class="all-contetn-2-p">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat at
+        numquam praesentium temporibus totam aperiam nihil cupiditate facere.
+        Quia, earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Ad, ipsa incidunt. Numquam dicta, accusantium, magni voluptas velit
+        expedita, omnis eum sed molestias rem sapiente quam molestiae
+        perferendis aliquam commodi iure.
+      </p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima
+        qui, quidem enim
+      </p>
+    </div>
+    <div class="all-content-3">
+      <h1>Bootstrap HTML Template</h1>
+      <hr class="horizental-line" />
+    </div>
+    <div class="all-content-4">
+      <div class="all-content-4-item">
+        <h1>EDUCATION</h1>
+        <p>
+          <b>Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. Veniam
+          unde consequuntur itaque?
+        </p>
+        <p>
+          <b>Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. Veniam
+          unde consequuntur itaque? Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+          <b>Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. Veniam
+          unde consequuntur itaque? Lorem ipsum dolor sit amet. Lorem, ipsum
+          dolor.
+        </p>
+      </div>
+      <div class="all-content-4-item">
+        <h1>EDUCATION</h1>
+        <p>
+          <b>Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. Veniam
+          unde consequuntur itaque?
+        </p>
+        <p>
+          <b>Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. Veniam
+          unde consequuntur itaque? Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+          <b>Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. Veniam
+          unde consequuntur itaque? Lorem ipsum dolor sit amet. Lorem, ipsum
+          dolor.
+        </p>
+      </div>
+    </div>
+    <div class="upper-content-5">
+      <h1>Pricing</h1>
+      <hr class="horizental-line" />
+    </div>
+    <div class="all-content-5">
+      <div class="all-content-5-item">
+        <h1>225</h1>
+        <p>
+          Lorem ipsum
+          <br />
+          dolor sit.
+        </p>
+        <button>Buy It</button>
+      </div>
+      <div class="all-content-5-item">
+        <h1>225</h1>
+        <p>
+          Lorem ipsum
+          <br />
+          dolor sit.
+        </p>
+        <button>Buy It</button>
+      </div>
+      <div class="all-content-5-item">
+        <h1>225</h1>
+        <p>
+          Lorem ipsum
+          <br />
+          dolor sit.
+        </p>
+        <button>Buy It</button>
+      </div>
+    </div>
+  </body>
+</html>

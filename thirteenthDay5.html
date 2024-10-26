@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thirteenth Day Homework 5</title>
+    <style>
+      body {
+        background-color: skyblue;
+      }
+
+      .all-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+        margin: 50px auto;
+      }
+
+      .first-item {
+        background-color: lightblue;
+        border: 1px solid lightblue;
+        border-radius: 4px;
+        text-align: left;
+        color: white;
+        padding: 15px;
+        height: 400px;
+      }
+
+      .first-item button {
+        background-color: white;
+        padding: 10px;
+        color: skyblue;
+        border: 1px solid white;
+        border-radius: 4px;
+      }
+
+      .second-item {
+        background-color: white;
+        text-align: left;
+        padding: 10px;
+      }
+
+      table {
+        border-spacing: 10px;
+      }
+
+      .inputs {
+        padding-left: 12px;
+      }
+
+      .input {
+        width: 84%;
+      }
+
+      .second-button {
+        color: white;
+        background-color: skyblue;
+        padding: 10px 20px;
+        margin: 10px;
+        border: 1px solid skyblue;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+
+      .second-item a {
+        color: skyblue;
+      }
+
+      .second-item h1 {
+        color: skyblue;
+      }
+
+      /* input {
+        height: 20px;
+      } */
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="all-content">
+        <div class="first-item">
+          <h1>INFORMATION</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+            optio, quos adipisci voluptatibus ex quae. Commodi unde, dolorem
+            voluptates optio officiis laboriosam expedita amet eveniet, ducimus
+            pariatur quas minus nobis dolorum nulla eum impedit reprehenderit
+            nostrum excepturi assumenda sint! Assumenda!
+          </p>
+          <p>
+            <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit.
+            Porro, minus illo fugit magni soluta nihil exercitationem ipsam rem
+            tenetur unde.
+          </p>
+          <button>Have An Account</button>
+        </div>
+        <div class="second-item">
+          <h1>REGISTER FORM</h1>
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <td><label for="fn">First Name:</label></td>
+                <td><label for="ln">Last Name:</label></td>
+              </tr>
+              <tr>
+                <td><input type="text" id="fn" /></td>
+                <td><input type="text" id="ln" /></td>
+              </tr>
+            </table>
+            <div class="inputs">
+              <label for="e">Your Email:</label>
+              <br />
+              <input class="input" type="email" id="e" />
+            </div>
+            <table>
+              <tr>
+                <td><label for="p">Password:</label></td>
+                <td><label for="cn">Confirm Password:</label></td>
+              </tr>
+              <tr>
+                <td><input type="password" id="p" /></td>
+                <td><input type="password" id="cn" /></td>
+              </tr>
+            </table>
+            <input style="padding-left: 15px" type="checkbox" id="iagree" />
+            <label for="iagree"
+              ><b>I agree to the </b><a href="#">Laws & Conditions</a></label
+            >
+            <br />
+            <input class="second-button" type="submit" value="Register" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
